@@ -79,6 +79,28 @@ Deep Fully Connected Neural Networks: The default model used in MLS. These netwo
 Incremental and Active Learning: Continuously update the model with new data points and actively focus on regions of interest based on the reconstructed likelihood.
 Train a machine learning model (e.g., a deep neural network) to predict physical observables based on the parameter sets.
 
+**MLPRegressor**
+
+**Definition:**
+- MLPRegressor stands for Multi-Layer Perceptron Regressor, a type of artificial neural network used for regression tasks. It consists of multiple layers of neurons, including input, hidden, and output layers. Each neuron in a layer is connected to every neuron in the previous and next layers.
+
+### Parameters of MLPRegressor
+
+#### `hidden_layer_sizes=(100, 100)`:
+- This specifies the architecture of the neural network.
+- It indicates that the network will have two hidden layers, each containing 100 neurons.
+- You can adjust the number and size of the hidden layers depending on the complexity of the problem and the amount of training data available.
+
+#### `max_iter=1000`:
+- This parameter sets the maximum number of iterations (epochs) the algorithm will run for training.
+- Training may stop early if the optimization converges before reaching this number of iterations.
+
+#### `random_state=42`:
+- This is a seed used by the random number generator.
+- Setting a random state ensures reproducibility of the results, meaning the same initial conditions will be used each time the code is run, leading to the same model being trained.
+
+
+
 ```python
 from sklearn.neural_network import MLPRegressor
 
