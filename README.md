@@ -1,6 +1,6 @@
 # Exploring-Supersymmetry-with-Machine-Learning
 # Machine Learning Scan for Exploring the CMSSM Parameter Space
-
+Machine Learning Scan (MLS) is a specific application of machine learning tailored for the exploration of high-dimensional parameter spaces in theoretical physics, particularly for models like the Minimal Supersymmetric Standard Model (MSSM) and the Constrained MSSM (CMSSM). Here's a detailed look at the architecture and structure of MLS.
 ## Steps and Concepts
 
 ### 1. **Parameter Space and Initial Sampling**
@@ -73,7 +73,10 @@ X_train = params
 y_train = observables
 ```
 ### 4. **Training the Machine Learning Model**
+Machine Learning Models:
 
+Deep Fully Connected Neural Networks: The default model used in MLS. These networks have multiple hidden layers with rectified linear unit (ReLU) activation functions and are optimized using the Adam optimizer.
+Incremental and Active Learning: Continuously update the model with new data points and actively focus on regions of interest based on the reconstructed likelihood.
 Train a machine learning model (e.g., a deep neural network) to predict physical observables based on the parameter sets.
 
 ```python
