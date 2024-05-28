@@ -112,6 +112,32 @@ def train_model(X_train, y_train):
 # Train the model
 model = train_model(X_train, y_train)
 ```
+### Multi-Layer Perceptron Regressor (MLP Regressor)
+
+A Multi-Layer Perceptron Regressor (MLP Regressor) is a type of artificial neural network used for regression tasks, where the goal is to predict a continuous output variable based on one or more input variables. Here are the key components and features of an MLP Regressor:
+
+#### 1. Layers:
+   - **Input Layer**: The first layer that receives the input data.
+   - **Hidden Layers**: One or more intermediate layers where each neuron applies a weighted sum followed by a non-linear activation function. The number of hidden layers and neurons per layer can vary.
+   - **Output Layer**: The final layer that produces the predicted continuous output.
+
+#### 2. Neurons:
+   - Basic units of the network, each performing a weighted sum of inputs and passing the result through an activation function.
+
+#### 3. Activation Functions:
+   - Functions like ReLU (Rectified Linear Unit), sigmoid, or tanh, applied to the weighted sum of inputs to introduce non-linearity.
+
+#### 4. Weights and Biases:
+   - Parameters learned during the training process, representing the strength of connections between neurons.
+
+#### 5. Training:
+   - **Loss Function**: Typically Mean Squared Error (MSE) or Mean Absolute Error (MAE), measuring the difference between predicted and actual values.
+   - **Optimization Algorithm**: Commonly gradient descent or its variants (e.g., Adam), used to minimize the loss function by updating weights and biases.
+
+#### 6. Backpropagation:
+   - A method for calculating gradients of the loss function with respect to weights, allowing the network to learn by adjusting weights to reduce errors.
+
+The MLP Regressor is useful in various applications, such as predicting house prices, stock prices, or any other scenario where the goal is to predict a numerical value based on input features. It can capture complex relationships between inputs and outputs by learning from the training data.
 
 
 
